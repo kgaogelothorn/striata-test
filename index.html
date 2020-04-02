@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Striata - Test</title>
     <style>
         body {
@@ -22,8 +23,9 @@
         p,
         h3 {
             padding: 0 15px;
-           
+
         }
+
         h3 {
             text-transform: uppercase;
         }
@@ -62,122 +64,150 @@
             width: 100px;
             cursor: pointer;
         }
+
         .footer {
             padding: 20px;
             text-transform: uppercase;
+        }
+
+        @media (max-width: 500px) {
+            td{
+                display: block;
+                width: 100%;
+            }
+
+            tr {
+                text-align: center;
+                margin: 5px;
+            }
+
+            td {
+                margin: 5px;
+            }
         }
     </style>
 </head>
 
 <body>
     <table class="main-container">
-        <tbody>
-            <table>
-                <tr>
-                    <td><img class="hero-banner" src="./herobanner.jpg" alt="hero header"></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p>Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem eget
-                            cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante ipsum
-                            primis in
-                            faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td class="bg-grey text-center">
-                        <h3 class="text-center">Header</h3>
-                        <p class="display-block spacing-sm">
-                            Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at, aliquam
-                            nec urna.
-                        </p>
-                        <p class="spacing-sm">
-                            Maecenas ut suscipit ex, sit amet imperdiet ligula. Donec malesuada vehicula ullamcorper.
-                        </p>
-                        <button class="btn btn-primary">CTA ></button>
-                    </td>
-                    <td width="20px"></td>
-                    <td class="bg-grey"><img src="./block2.jpg" alt="block image"></td>
-                </tr>
-                <tr>
-                    <td height="20px"></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td class="bg-grey"><img src="./block3.jpg" alt="block image"></td>
-                    <td width="20px"></td>
-                    <td class="text-center bg-grey">
-                        <h3>Header</h3>
-                        <p class="display-block spacing-sm">
-                            Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at, aliquam
-                            nec urna.
-                        </p>
-                        <p class="spacing-sm">
-                            Maecenas ut suscipit ex, sit amet imperdiet ligula. Donec malesuada vehicula ullamcorper.
-                        </p>
-                        <button class="btn-primary">CTA ></button>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>
-                        <p class="display-block spacing-sm text-center">
-                            Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at, aliquam
-                            nec urna.
-                        </p>
-                        <p class="spacing-sm text-center">
-                            Maecenas ut suscipit ex, sit amet imperdiet ligula
-                        </p>
-                    </td>
-                    <td width="20px"></td>
-                    <td>
-                        <p class="display-block spacing-sm text-center">
-                            Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at, aliquam
-                            nec urna.
-                        </p>
-                        <p class="spacing-sm text-center">
-                            Maecenas ut suscipit ex, sit amet imperdiet ligula
-                        </p>
-                    </td>
-                    <td width="20px"></td>
-                    <td>
-                        <p class="display-block spacing-sm text-center">
-                            Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at, aliquam
-                            nec urna.
-                        </p>
-                        <p class="spacing-sm text-center">
-                            Maecenas ut suscipit ex, sit amet imperdiet ligula
-                        </p>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td class="text-center bold footer bg-grey">Footer</td>
-                </tr>
-                <tr>
-                    <td>
-                        <p class="text-center">
-                            Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem
-                            eget cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante ipsum
-                            primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-                        </p>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td class="social-links text-center">
-                        <a href="#"><img src="./fb.jpg" alt="facebook"></a>
-                        <a href="#"><img src="./twit.jpg" alt="Twitter"></a>
-                        <a href="#"><img src="./link.jpg" alt="Linked In"></a>
-                    </td>
-                </tr>
-            </table>
-        </tbody>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td><img class="hero-banner" src="./herobanner.jpg" alt="hero header"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem
+                                eget
+                                cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante ipsum
+                                primis in
+                                faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="bg-grey text-center">
+                            <h3 class="text-center">Header</h3>
+                            <p class="display-block spacing-sm">
+                                Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at,
+                                aliquam
+                                nec urna.
+                            </p>
+                            <p class="spacing-sm">
+                                Maecenas ut suscipit ex, sit amet imperdiet ligula. Donec malesuada vehicula
+                                ullamcorper.
+                            </p>
+                            <button class="btn btn-primary">CTA ></button>
+                        </td>
+                        <td width="20px"></td>
+                        <td class="bg-grey"><img src="./block2.jpg" alt="block image"></td>
+                    </tr>
+                    <tr>
+                        <td height="20px"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="bg-grey"><img src="./block3.jpg" alt="block image"></td>
+                        <td width="20px"></td>
+                        <td class="text-center bg-grey">
+                            <h3>Header</h3>
+                            <p class="display-block spacing-sm">
+                                Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at,
+                                aliquam
+                                nec urna.
+                            </p>
+                            <p class="spacing-sm">
+                                Maecenas ut suscipit ex, sit amet imperdiet ligula. Donec malesuada vehicula
+                                ullamcorper.
+                            </p>
+                            <button class="btn-primary">CTA ></button>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <p class="display-block spacing-sm text-center">
+                                Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at,
+                                aliquam
+                                nec urna.
+                            </p>
+                            <p class="spacing-sm text-center">
+                                Maecenas ut suscipit ex, sit amet imperdiet ligula
+                            </p>
+                        </td>
+                        <td width="20px"></td>
+                        <td>
+                            <p class="display-block spacing-sm text-center">
+                                Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at,
+                                aliquam
+                                nec urna.
+                            </p>
+                            <p class="spacing-sm text-center">
+                                Maecenas ut suscipit ex, sit amet imperdiet ligula
+                            </p>
+                        </td>
+                        <td width="20px"></td>
+                        <td>
+                            <p class="display-block spacing-sm text-center">
+                                Praesent malesuada fringilla sem eget cursus. Ut dolor magna, eleifend at luctus at,
+                                aliquam
+                                nec urna.
+                            </p>
+                            <p class="spacing-sm text-center">
+                                Maecenas ut suscipit ex, sit amet imperdiet ligula
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="text-center bold footer bg-grey">Footer</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="text-center">
+                                Cras condimentum pellentesque libero, ac eleifend ante. Praesent malesuada fringilla sem
+                                eget cursus. Ut dolor magna, eleifend at luctus at, aliquam nec urna. Vestibulum ante
+                                ipsum
+                                primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="social-links text-center">
+                            <a href="#"><img src="./fb.jpg" alt="facebook"></a>
+                            <a href="#"><img src="./twit.jpg" alt="Twitter"></a>
+                            <a href="#"><img src="./link.jpg" alt="Linked In"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
     </table>
 </body>
 
